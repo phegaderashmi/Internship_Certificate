@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Certificate - Rashmi Phegade</title>
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
+        padding: 50px;
+      }
+
+      .certificate {
+        background-color: #fff;
+        border: 10px solid #2c3e50;
+        border-radius: 15px;
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+      }
+
+      .certificate h1 {
+        text-align: center;
+        font-size: 36px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .certificate h2 {
+        text-align: center;
+        color: #16a085;
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+
+      .certificate p {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+        text-align: justify;
+      }
+
+      .certificate .signature {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .certificate .signature div {
+        text-align: center;
+      }
+
+      .certificate .signature span {
+        display: block;
+        border-top: 1px solid #000;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .zoomable-container {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        max-width: 300px;
+        margin: 30px auto;
+        transition: transform 0.3s ease;
+      }
+
+      .zoomable-container img {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        transition: transform 0.4s ease;
+      }
+
+      .zoomable-container:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Fullscreen Modal Style */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+      }
+
+      .modal:target {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="certificate">
+      <h1>Certificate of Internship</h1>
+      <h2>Kanalytics Pvt. Ltd.</h2>
+
+      <p>
+        This is to certify that
+        <strong>Ms. Rashmi Chandrakant Phegade</strong> has successfully
+        completed her <strong>6-month internship</strong> at
+        <strong>Kanalytics Pvt. Ltd.</strong> from
+        <em>January 2025 to June 2025</em>. During this period, she worked on
+        real-time projects and gained hands-on experience in modern web
+        technologies including: <strong>React.js</strong>,
+        <strong>Next.js</strong>, and <strong>MongoDB</strong>.
+      </p>
+
+      <p>
+        Rashmi demonstrated exceptional problem-solving abilities, enthusiasm to
+        learn, and a strong commitment towards her role as a
+        <strong>Frontend Developer</strong>. She has shown great initiative and
+        technical proficiency throughout her tenure.
+      </p>
+
+      <!-- Zoom on Hover + Click to Enlarge -->
+      <a href="#fullview" class="zoomable-container">
+        <img
+          src="Intership Certificate.png"
+          alt="Internship Certificate Preview"
+        />
+      </a>
+
+      <!-- Modal Full View -->
+      <div id="fullview" class="modal" onclick="window.location.hash=''">
+        <img src="Intership Certificate.png" alt="Full Certificate View" />
+      </div>
+
+      <div class="signature">
+        <div>
+          <span>HR Manager</span>
+          <span>Kanalytics Pvt. Ltd.</span>
+        </div>
+        <div>
+          <span>Date: 16 July 2025</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
